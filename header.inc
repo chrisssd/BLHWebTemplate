@@ -43,7 +43,7 @@
         </div>
       
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+  </div><!-- /container-fluid -->
 </nav>
 <nav id="mobiNav" class="navbar navbar-fixed-top navbar-default visible-sm visible-xs">
   <div class="container">
@@ -87,7 +87,7 @@
         </div>
       
     </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+  </div><!-- /container-fluid -->
 </nav>
 </div>
 

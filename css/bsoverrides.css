@@ -32,6 +32,16 @@
     z-index:10;
 }
 
+.blhbs.container-fluid {
+
+  padding-left:0;
+  padding-right:0;
+}
+.container {
+
+  padding-left:0;
+  padding-right:0;
+}
 .container-fluid {
 
   padding-left:0;
