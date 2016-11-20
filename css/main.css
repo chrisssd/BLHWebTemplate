@@ -21,11 +21,7 @@ body {
     background-size: cover;
     font-size: 80%;
 
-  /*    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  /*min-height: 100vh; /* These two lines are counted as one :-)       */
-
-  /*display: flex;
-  align-items: center;*/
+ 
 }
 #footerInfoContainer {
     background-image: url(../img/lh_gauze_bg1.jpg);
@@ -48,3 +44,4 @@ body {
 .blhcontent {
     padding:5px;
 }
+

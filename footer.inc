@@ -11,25 +11,15 @@
 	ApplyBootstrapMenu();
 	ApplyBootstrapSearch();
 ApplyBootstrapPills();
-	$(document).ready(function () {
 
-var menu = $('#nav');
-var origOffsetY = menu.offset().top;
 
-function scroll() {
-    if ($(window).scrollTop() >= origOffsetY) {
-        $('#nav').addClass('navbar-fixed-top');
-        //$('.content').addClass('menu-padding');
+$(document).scroll(function(e){
+    var scrollTop = $(document).scrollTop();
+    if(scrollTop > 0){
+        console.log(scrollTop);
+        $('.navbar').removeClass('navbar-static-top').addClass('navbar-fixed-top');
     } else {
-        $('#nav').removeClass('navbar-fixed-top');
-		 $('#nav').addClass('navbar-static-top');
-       // $('.content').removeClass('menu-padding');
+        $('.navbar').removeClass('navbar-fixed-top').addClass('navbar-static-top');
     }
-
-
-   }
-
-  document.onscroll = scroll;
-
-}); 
+});
 </script>

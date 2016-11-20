@@ -19,7 +19,8 @@
   </head>
   <body>
 
-       <div class="pushWrapper">
+      
+           <div id="headerBlock"></div>
      <$include virtual="header.inc"/$>
  
           <div id="wrapper" class="wrapper" data-cmsadmin-layout-wrapper="true">
@@ -56,7 +57,6 @@
                         </div>
                       </div>
                       <div class="col-md-4">
-                           <!-- <$globalmenu showLevels="2,3,4" alwaysShowChildren="false" cssClass="list-group"   showHome="false"/$>-->
                             <$globalmenu showLevels="2,3,4" alwaysShowChildren="false" cssClass="nav nav-pills nav-stacked"   showHome="false"/$>
                             <div class="blhcontent"><$region name="sidebar"$><$/region$></div>
                       </div>
@@ -64,34 +64,8 @@
                 </div>
               </div>
 
-              <!--
-              <div class="container-fluid">
-                  
-                <div class="row">
-                    
-                    <div class="col-md-9">
-                       
-                        <$region name="full"$><$/region$>
-                        <$region name="full_a"$><$/region$>
-                        <$region name="full_b"$><$/region$>
-                    </div>
-                    <div class="col-md-3 ">
-                        
-                        <$region name="sidebar_a"$><$/region$>
-                        <$region name="sidebar_b"$><$/region$>
-                        <$region name="misc"$><$/region$>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <$region name="special"$><$/region$>
-                        </div>
-                </div>
-            </div>
-            -->
         </div>
-         <div class="push"></div>
-    </div>
+         
     <div class="container-fluid" id="footerInfoContainer">
           <div class="row">
             
