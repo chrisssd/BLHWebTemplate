@@ -1,0 +1,296 @@
+
+.list-group,
+.list-group-item,
+.list-group-item a,
+.nav-tabs a,
+.nav-pills a,
+.navbar,
+.navbar-toggle,
+.icon-bar,
+.breadcrumb,
+.pagination,
+.pager *,
+.label,
+.badge,
+.jumbotron,
+.thumbnail,
+.alert,
+.progress,
+.panel,
+.well,
+.modal-content,
+.tooltip-inner,
+.popover,
+.popover-title,
+.carousel-indicators li {
+    border-radius:0 !important;
+}
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+.container-fluid {
+
+  padding-left:0;
+  padding-right:0;
+}
+
+#infoHeader.panel-default {
+  margin-top:5px;
+  background-color: rgba(255,255,255,.7)
+}
+/**********************************
+Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+***********************************/
+
+.navbar-brand {
+  padding: 0px;
+  
+}
+
+.navbar-brand>a {
+  margin-top:10px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+.navbar-default .navbar-toggle {
+  color:#ffffff;
+}
+
+/*************************
+menuModeS 2-7 BELOW 
+**************************/
+
+/* menuMode 2 (larger logo) - simply adjust top bottom padding to make logo larger */
+
+.menuMode2 .navbar-brand>img {
+  padding: 7px 14px;
+}
+
+
+/* menuMode 3
+
+line height is 20px by default so add 30px top and bottom to equal the new .navbar-brand 80px height  */
+
+.menuMode3 .navbar-brand {
+  height: 60px;
+}
+
+.menuMode3 .nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.menuMode3 .navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+
+/* menuMode 4 - Small Narrow Logo*/
+.menuMode4 .navbar-brand>img {
+  padding: 7px 14px;
+}
+
+
+/* menuMode 5 - Logo with Text*/
+.menuMode5 .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.menuMode5 .navbar-brand>img {
+  padding: 7px 14px;
+}
+
+
+/* menuMode 6 - Background Logo*/
+.menuMode6 .navbar-brand{ 
+  background: url(/img/blhlogo_85x60.png) center / contain no-repeat;
+  width: 200px;
+}
+
+
+
+
+
+/* menuMode 8 - Center on mobile*/
+	@media only screen and (max-width : 768px){
+  .menuMode-8 .navbar-brand {
+  padding: 0px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+.menuMode-8 .navbar-brand>img {
+  height: 100%;
+  width: auto;
+  padding: 7px 14px; 
+}
+}
+
+
+/* menuMode 8 - Center Background */
+.menuMode-8 .navbar-brand {
+  background: url(http://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png) center / contain no-repeat;
+  width: 200px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+
+
+
+
+/* menuMode 9 - Center with Flexbox and Text*/
+.brand-centered {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.brand-centered .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+/* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+.navbar-alignit .navbar-header {
+	  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 50px;
+}
+.navbar-alignit .navbar-brand {
+	top: 50%;
+	display: block;
+	position: relative;
+	height: auto;
+	transform: translate(0,-50%);
+	margin-right: 15px;
+  margin-left: 15px;
+}
+
+
+
+
+
+.navbar-nav>li>.dropdown-menu {
+	z-index: 9999;
+}
+
+
+/*Custom Navbar colors */
+
+.navbar-default {
+  border-bottom: solid 1px #90ba3e;
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 3px 5px 0px rgba(0,0,0,0.75);
+  }
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  background-color: rgba(117,162,193,.6);
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #90ba3e;
+}
+.navbar-default .navbar-nav > .selectedPage > a,
+.navbar-default .navbar-nav > .selectedPage > a:hover,
+.navbar-default .navbar-nav > .selectedPage > a:focus {
+  color: #ffffff;
+  background-color: #90ba3e;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #90ba3e;
+}
+
+.list-group-item.active, .list-group-item.active {
+  background-color:#e5e5e5;
+  border-color:#e5e5e5;
+}
+.list-group-item.active:hover {
+  background-color:#e5e5e5;
+  border-color:#e5e5e5;
+ 
+} 
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active > a.selectedPage,
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active > a.selectedPage:hover,
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active > a.selectedPage:active
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active > a.selectedPageParent,
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active > a.selectedPageParent:hover,
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active > a.selectedPageParent:active
+{
+  color:#252525;
+  text-decoration: none;
+  font-weight: bold;
+  /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);*/
+  
+}
+
+.noShadow {
+  text-shadow: none;
+
+
+}
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/
+* {
+margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+html, body {
+	height: 100%;
+}
+.pushWrapper {
+	min-height: 100%;
+	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 100%;
+	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+  margin-top:0px;
+ clear: both;
+	height: 155px; /* .push must be the same height as .footer */
+}
+.footer  {
+  background-color: #cccccc;
+  border-top:1px solid #90ba3e;
+}
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/

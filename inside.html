@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title></title>
+    <$include virtual="head.inc"/$>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        
+        
+  </head>
+  <body>
+
+       <div class="pushWrapper">
+     <$include virtual="header.inc"/$>
+ 
+          <div id="wrapper" class="wrapper" data-cmsadmin-layout-wrapper="true">
+
+            <div class="container-fluid">
+                <!--Featured-->
+                <div class="row">
+                    <div class="col-md-12">
+                     
+                             <div class="blhcontent jumbotron"><$region name="featured" cssClass=""$><$/region$></div>
+                      
+                       </div>
+                </div>
+            </div>
+            <div class="container">
+                
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="blhcontent"><$region name="main"$><$/region$></div>
+                        <div class="row">
+                             <div class="col-md-6">
+                                 <div class="blhcontent"><$region name="split_left"$><$/region$></div>
+                             </div>
+
+                             <div class="col-md-6">
+                                 <div class="blhcontent"><$region name="split_right"$><$/region$></div>
+                             </div>   
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="blhcontent"><$region name="content_base"$><$/region$></div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                           <!-- <$globalmenu showLevels="2,3,4" alwaysShowChildren="false" cssClass="list-group"   showHome="false"/$>-->
+                            <$globalmenu showLevels="2,3,4" alwaysShowChildren="false" cssClass="nav nav-pills nav-stacked"   showHome="false"/$>
+                            <div class="blhcontent"><$region name="sidebar"$><$/region$></div>
+                      </div>
+                      
+                </div>
+              </div>
+
+              <!--
+              <div class="container-fluid">
+                  
+                <div class="row">
+                    
+                    <div class="col-md-9">
+                       
+                        <$region name="full"$><$/region$>
+                        <$region name="full_a"$><$/region$>
+                        <$region name="full_b"$><$/region$>
+                    </div>
+                    <div class="col-md-3 ">
+                        
+                        <$region name="sidebar_a"$><$/region$>
+                        <$region name="sidebar_b"$><$/region$>
+                        <$region name="misc"$><$/region$>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <$region name="special"$><$/region$>
+                        </div>
+                </div>
+            </div>
+            -->
+        </div>
+         <div class="push"></div>
+    </div>
+    <div class="container-fluid" id="footerInfoContainer">
+          <div class="row">
+            
+            <div class="col-md-8">
+              <div id="infoHeader" class=""><$include virtual="informationAlt.inc"/$></div>
+              </div>
+              <div class="col-md-4 text-center">
+                <$logo maxheight="170" href="/"/$>
+            </div>
+          </div>
+      
+      </div>
+<$include virtual="footer.inc"/$>
+   
+  </body>
+</html>

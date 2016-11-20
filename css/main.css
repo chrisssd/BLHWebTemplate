@@ -1,0 +1,50 @@
+* {
+    font-family: 'Tahoma', 'Geneva', 'sans-serif';
+}
+
+
+body {
+    background-image: url(../img/furley_bg.png);
+    background-repeat: repeat;
+     
+}
+#wrapper {
+    /*margin-top: 120px;*/
+}
+#headerBlock {
+    /*height: 310px;*/
+}
+#headerInfoContainer {
+    background-image: url(../img/blc_gauze_bg1.jpg);
+    background-position:  35% 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 80%;
+
+  /*    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  /*min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  /*display: flex;
+  align-items: center;*/
+}
+#footerInfoContainer {
+    background-image: url(../img/lh_gauze_bg1.jpg);
+    background-position: 35% 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    font-size: 80%;
+}
+#mobiSpacer {
+    height:60px;
+}
+
+.hero {
+    width:100%;
+    min-height: 100px;
+    background-color: #90ba3e;
+    color: #ffffff;
+}
+.blhcontent {
+    padding:5px;
+}
