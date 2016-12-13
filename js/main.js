@@ -52,6 +52,10 @@ function ApplyBootstrapSearch() {
 
     $(".search button").addClass('btn btn-default');
     
-$   (".search input").addClass('form-control');
+    $(".search input").addClass('form-control');
+
+    $(".searchResults").addClass('list-group');
+    $(".searchResults li").addClass('list-group-item');
+    
     
 }
