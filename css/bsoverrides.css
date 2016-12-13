@@ -52,10 +52,20 @@ nav > .container {
   padding-left:0;
   padding-right:0;
 }
+.row {
+
+  margin-left:0px;
+  margin-right:0px;
+}
 
 #infoHeader.panel-default {
   margin-top:5px;
   background-color: rgba(255,255,255,.7)
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  margin-right: 0px;
+  margin-left: 0px;
 }
 /**********************************
 Responsive navbar-brand image CSS
