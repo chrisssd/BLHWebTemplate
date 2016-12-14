@@ -18,8 +18,11 @@ $(document).scroll(function(e){
     if(scrollTop > 0){
       
         $('.navbar').removeClass('navbar-static-top').addClass('navbar-fixed-top');
+        $('body').addClass('scroll-content');
+        
     } else {
-       // $('.navbar').removeClass('navbar-fixed-top').addClass('navbar-static-top');
+        $('.navbar').removeClass('navbar-fixed-top').addClass('navbar-static-top');
+        $('body').removeClass('scroll-content');
     }
 });
 
